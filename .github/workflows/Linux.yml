@@ -1,0 +1,22 @@
+name: Linux Commands Practice
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  linux-practice:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display Current Date
+        run: date
+
+      - name: Display Current User
+        run: whoami
+
+      - name: Display Current Directory
+        run: pwd
+
+      - name: List Repository Files
+        run: ls -la
